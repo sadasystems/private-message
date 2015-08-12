@@ -1,0 +1,31 @@
+{
+  "name": "secretmessage",
+  "version": "0.0.1",
+  "description": "encrypt a secret message with github user's public rsa key and then send it to them with a pull request",
+  "main": "hello.js",
+  "dependencies": {
+    "read": "1.0.6",
+    "ssh-key-to-pem": "0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadasystems/secretmessage.git"
+  },
+  "keywords": [
+    "rsa",
+    "encrypt",
+    "pull",
+    "request",
+    "l33t"
+  ],
+  "author": "John Lancaster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sadasystems/secretmessage/issues"
+  },
+  "homepage": "https://github.com/sadasystems/secretmessage#readme"
+}
