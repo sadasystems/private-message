@@ -11,6 +11,7 @@ $ git clone https://github.com/sadasystems/secretmessage
 $ cd secretmessage
 $ npm install
 ```
+
 ### Usage: Encrypt a Message
 ```sh
 $ node encrypt_message.js <github username> <message text file> > secret_message.out
@@ -18,6 +19,7 @@ $ git add secret_message.out
 $ git commit -m "hey @github-user, accept this pull request with a secret message just for you!"
 $ git push remote master
 ```
+
 ### Usage: Decrypt a Message
 ```sh
 $ node hello.js secret_message.out
@@ -28,7 +30,8 @@ Decrypt your message.  I'm not stealing your private key, promise, read the code
    -------
 
      magic secret message just for you appears here!
-     ```
+```
+
 ### Todo's
 
      * send some secret messages
