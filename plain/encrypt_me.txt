@@ -1,0 +1,9 @@
+Hey!  This is a plain text message, use the following command to encrypt it for a github user:
+
+node encrypt_message sadasystems plain/encrypt_me.txt > secret/secret_for_sada.out
+
+
+add a personal note here, we'd love to hear from you!
+
+
+
