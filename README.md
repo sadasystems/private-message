@@ -1,6 +1,6 @@
 # Secret Message
 
-Secret Message is a tiny tool which enables you to easily send and recieve encrypted messages to users on Github via pull requests with the latest public rsa key associated with their account.
+Secret Message is a tiny tool which enables you to easily send and recieve encrypted messages to users on Github via pull requests with the latest public rsa key associated with their account. Inspired by [Jass](https://github.com/jschauma/jass).
 
 ### Dependencies
 * node.js v0.12.4
