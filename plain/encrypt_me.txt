@@ -2,8 +2,16 @@ Hey!  This is a plain text message, use the following command to encrypt it for 
 
 node encrypt_message sadasystems plain/encrypt_me.txt > secret/secret_for_sada.out
 
+To make sure you don't include your plain text messages in the git history, save it
+in the "plain" directory and prefix the filename with "message_", for example:
 
-add a personal note here, we'd love to hear from you!
+`plain/message_for_sada.txt`
+
+
+Add a personal note below, we'd love to hear from you!
+
+-----------------------------------------------------
+
 
 
 
