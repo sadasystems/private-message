@@ -14,12 +14,15 @@ https.get('https://github.com/' + args[0] + '.keys', function(res) {
   res.on('data', function(d) {
     data += d;
   });
+
   res.on('end', function () {
     var pem_pub_key = sshKeyToPEM(data.split('\n').slice(-1)[0]); // convert rsa to pem
 
-    var buffer = new Buffer(fs.readFileSync(args[1], 'utf8'));
     var chunks = [];
-    // work around for 214 character limit for encrypting text with rsa pub key
+    var buffer = new Buffer(fs.readFileSync(args[1], 'utf8'));
+
+    // work around for 214 character limit for encrypting
+    // text with small openssh rsa pub key
     for (var i = 0; i <= (buffer.length / 214); i++) {
      chunks.push(buffer.slice(i * 214, (i * 214) + 214));
     }

@@ -7,7 +7,7 @@ var chunk = 0;
 
 if (!args.length) {
   console.log('Usage: node hello <secret message file>');
-  process.exit();
+  process.exit(0);
 }
 
 read({ prompt: 'Decrypt your message.  I\'m not stealing your private key, promise, read the code!\n\n ~/.ssh/id_rsa pass phrase:', silent: true }, function(er, pass) {
@@ -24,9 +24,7 @@ read({ prompt: 'Decrypt your message.  I\'m not stealing your private key, promi
     }
 
     process.stdout.write(string.substring((i - 1), i));
-
     var rand = Math.floor(Math.random() * (100)) + 14;
-
     setTimeout(function(){writer(i);}, rand);
 
    })(0)
@@ -35,6 +33,7 @@ read({ prompt: 'Decrypt your message.  I\'m not stealing your private key, promi
 
   function decrypt(increment) {
       if (increment === secret_message.length - 1) process.exit(0);
+
       try {
         type(
             crypto.privateDecrypt({key: key, passphrase: pass },
@@ -51,4 +50,4 @@ read({ prompt: 'Decrypt your message.  I\'m not stealing your private key, promi
 
   decrypt(chunk);
 
-})
+});
