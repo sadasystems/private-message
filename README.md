@@ -36,6 +36,9 @@ Decrypt your message.  I'm not stealing your private key, promise, read the code
 
      * send some secret messages
 
+### Todont's
+     * commit plain text messages to the repo
+
 ### Version
 0.0.1
 
