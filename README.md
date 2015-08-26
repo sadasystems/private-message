@@ -12,6 +12,7 @@ This comes in handy when you want to message a developer but don't have their co
 $ node hello.js
 Usage: node hello <secret message file> <absolute path to private key (optional)>
 
+$ # example
 $ node hello.js secret/secret_message.out
 Decrypt your message.  Your private key is not being stolen, read the code!
 
@@ -28,6 +29,7 @@ Decrypt your message.  Your private key is not being stolen, read the code!
 $ node encrypt_message.js
 Usage: node encrypt_message <github username | absolute path to public key> <message file>
 
+$ # example
 $ node encrypt_message.js <github username> plain/message_<message text file> > secret/secret_message.out
 $ git add secret_message.out
 $ git commit -m "hey @github-user, accept this pull request with a secret message just for you!"
@@ -56,9 +58,6 @@ $ npm install
 ### Todont's
 
 * commit plain text message to the repo
-
-### Todont's
-     * commit plain text messages to the repo
 
 ### Version
 0.0.1
