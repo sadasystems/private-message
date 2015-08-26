@@ -9,11 +9,11 @@ This comes in handy when you want to message a developer but don't have their co
 
 ### Usage: Decrypt a Message
 ```sh
-$ node hello.js
-Usage: node hello <secret message file> <absolute path to private key (optional)>
+$ node decrypt_message.js
+Usage: node decrypt_message.js <secret message file> <absolute path to private key (optional)>
 
 $ # example
-$ node hello.js secret/secret_message.out
+$ node decrypt_message.js secret/secret_message.out
 Decrypt your message.  Your private key is not being stolen, read the code!
 
  ~/.ssh/id_rsa pass phrase: <enter passphrase>
