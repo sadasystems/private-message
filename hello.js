@@ -2,15 +2,19 @@ var fs = require('fs');
 var crypto = require("crypto");
 var read = require('read');
 var args = process.argv.slice(2);
-var key = fs.readFileSync(process.env.HOME + '/.ssh/id_rsa', 'utf8');
+var key_path = process.env.HOME + "/.ssh/id_rsa";
 var chunk = 0;
 
 if (!args.length) {
-  console.log('Usage: node hello <secret message file>');
+  console.log('Usage: node hello <secret message file> <absolute path to private key (optional)>');
   process.exit(0);
 }
 
-read({ prompt: 'Decrypt your message.  I\'m not stealing your private key, promise, read the code!\n\n ~/.ssh/id_rsa pass phrase:', silent: true }, function(er, pass) {
+if (args[1]) key_path = args[1];
+
+var key = fs.readFileSync(key_path, 'utf8');
+
+read({ prompt: 'Decrypt your message.  Your private key is not being stolen, read the code!\n\n ' + key_path + ' pass phrase:', silent: true }, function(er, pass) {
 
   console.log('\n\n--------\n');
   var secret_message = fs.readFileSync(args[0], 'utf8').split('\n');
