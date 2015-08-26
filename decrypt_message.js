@@ -6,7 +6,7 @@ var key_path = process.env.HOME + "/.ssh/id_rsa";
 var chunk = 0;
 
 if (!args.length) {
-  console.log('Usage: node hello <secret message file> <absolute path to private key (optional)>');
+  console.log('Usage: node decrypt_message.js <secret message file> <absolute path to private key (optional)>');
   process.exit(0);
 }
 
