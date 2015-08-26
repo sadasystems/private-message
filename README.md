@@ -36,7 +36,7 @@ $ git commit -m "hey @github-user, accept this pull request with a secret messag
 $ git push remote master
 ```
 
-* note: plain text messages stored in the `plain` directory, named message_[something] will be ignored by git.
+* note: plain text messages stored in the `plain` directory, will be ignored by git.
 
 ### Installation
 ```sh
