@@ -57,6 +57,9 @@ $ npm install
 
 * commit plain text message to the repo
 
+### Todont's
+     * commit plain text messages to the repo
+
 ### Version
 0.0.1
 
