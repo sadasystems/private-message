@@ -1,4 +1,5 @@
 # Ignore everything in this directory
 *
 # Except this file
+!encrypt_me.txt
 !.gitignore
