@@ -1,14 +1,11 @@
 Hey!  This is a plain text message, use the following command to encrypt it for a github user:
 
-node encrypt_message sadasystems plain/encrypt_me.txt > secret/secret_for_sada.out
+node encrypt_message.js jlank plain/encrypt_me.txt > secret/secret_for_jlank.out
 
-To make sure you don't include your plain text messages in the git history, save it
-in the "plain" directory and prefix the filename with "message_", for example:
+Make sure to save your plain text messages in the "plain" directory so it
+doesn't end up in git's history.
 
-`plain/message_for_sada.txt`
-
-
-Add a personal note below, we'd love to hear from you!
+Add a personal note below, I'd love to hear from you!
 
 -----------------------------------------------------
 
