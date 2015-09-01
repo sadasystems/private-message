@@ -1,6 +1,6 @@
-# Secret Message
+# Private Message
 
-Secret Message is a tiny tool which enables you to easily send and recieve encrypted messages to Github users via pull requests or commits to repositories.
+Private Message is a tiny tool which enables you to easily send and recieve encrypted messages to Github users via pull requests or commits to repositories.
 
 This comes in handy when you want to message a developer but don't have their contact info.  It works by encrypting a plain text mssage with the user's latest public RSA key associated with their account. Inspired by [Jass](https://github.com/jschauma/jass).
 
@@ -10,7 +10,7 @@ This comes in handy when you want to message a developer but don't have their co
 ### Usage: Decrypt a Message
 ```sh
 $ node decrypt_message.js
-Usage: node decrypt_message.js <secret message file> <absolute path to private key (optional)>
+Usage: node decrypt_message.js <private message file> <absolute path to private key (optional)>
 
 $ # example
 $ node decrypt_message.js secret/secret_message.out
@@ -20,7 +20,7 @@ Decrypt your message.  Your private key is not being stolen, read the code!
 
    -------
 
-     magic secret message just for you appears here!
+     magic private message just for you appears here!
 ```
 
 ### Usage: Encrypt a Message
@@ -32,7 +32,7 @@ Usage: node encrypt_message <github username | absolute path to public key> <mes
 $ # example
 $ node encrypt_message.js <github username> plain/message_<message text file> > secret/secret_message.out
 $ git add secret_message.out
-$ git commit -m "hey @github-user, accept this pull request with a secret message just for you!"
+$ git commit -m "hey @github-user, accept this pull request with a private message just for you!"
 $ git push remote master
 ```
 
@@ -40,8 +40,8 @@ $ git push remote master
 
 ### Installation
 ```sh
-$ git clone https://github.com/sadasystems/secretmessage
-$ cd secretmessage
+$ git clone https://github.com/sadasystems/private-message
+$ cd private-message
 $ npm install
 ```
 
@@ -53,7 +53,7 @@ $ npm install
 
 ### Todo's
 
-* send some secret messages
+* send some private messages
 
 ### Todont's
 
