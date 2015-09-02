@@ -54,6 +54,7 @@ $ npm install
 ### Todo's
 
 * send some private messages
+* integrate ssh-agent
 
 ### Todont's
 
