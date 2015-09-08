@@ -14,7 +14,7 @@ if (args[1]) key_path = args[1];
 
 var key = fs.readFileSync(key_path, 'utf8');
 
-read({ prompt: 'Decrypt your message.  Your private key is not being stolen, read the code!\n\n ' + key_path + ' pass phrase:', silent: true }, function(er, pass) {
+read({ prompt: 'Decrypt your message.  Is your private key being stolen? Read the code!\n\n ' + key_path + ' pass phrase:', silent: true }, function(er, pass) {
 
   console.log('\n\n--------\n');
   var secret_message = fs.readFileSync(args[0], 'utf8').split('\n');
