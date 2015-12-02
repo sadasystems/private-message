@@ -1,6 +1,6 @@
 # Private Message
 
-Private Message is a tiny tool which enables you to easily send and recieve encrypted messages to Github users via pull requests or commits to repositories.
+Private Message is a tiny tool which enables you to easily send and receive encrypted messages to GitHub users via pull requests or commits to repositories.
 
 ![Private Message Usage GIF](https://raw.githubusercontent.com/sadasystems/private-message/master/usage.gif)
 
