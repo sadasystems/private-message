@@ -4,7 +4,7 @@ Private Message is a tiny tool which enables you to easily send and receive encr
 
 ![Private Message Usage GIF](https://raw.githubusercontent.com/sadasystems/private-message/master/usage.gif)
 
-This comes in handy when you want to message a developer but don't have their contact info.  It works by encrypting a plain text mssage with the user's latest public RSA key associated with their account. Inspired by [Jass](https://github.com/jschauma/jass).
+This comes in handy when you want to message a developer but don't have their contact info.  It works by encrypting a plain text message with the user's latest public RSA key associated with their account. Inspired by [Jass](https://github.com/jschauma/jass).
 
 ### Dependencies
 * node.js v0.12.4
